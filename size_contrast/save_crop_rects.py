@@ -26,6 +26,7 @@ def run(exptfilename,sbx_fold='/home/mossing/modulation/2P/'):
         matlab_cmd = '"' + "save_and_transfer_crop_remote('" + thisfold + "','" + sbx_fold + "',true); exit;" + '"'
     
         print(matlab_cmd)
+        #os.system('/usr/local/MATLAB/R2019b/bin/matlab -r ' + matlab_cmd)
         os.system('matlab -r ' + matlab_cmd)
 
 if __name__ == "__main__":
