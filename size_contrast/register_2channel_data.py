@@ -45,7 +45,7 @@ def run(exptfilename,diameter=15,sbx_fold='/home/mossing/modulation/2P/',suite2p
         date = fileparts[0]
         animalid = fileparts[1]
         expt_ids = [str(x) for x in filenames[i]]
-        rpt.process_data(animalid,date,expt_ids,nchannels=1,delete_raw=True,result_base=result_fold,raw_base=raw_fold,diameter=diameter,fast_disk=fast_disk)
+        rpt.process_data(animalid,date,expt_ids,nchannels=2,delete_raw=True,result_base=result_fold,raw_base=raw_fold,diameter=diameter,fast_disk=fast_disk)
 
         try:
             #shutil.rmtree(fast_disk+'suite2p')
